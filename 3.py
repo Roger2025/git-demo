@@ -1,16 +1,16 @@
-lis = ["a", "b"]
-num = []
+# 1.加入例外處理  try_except Exception as e
+# 2.重複輸入,直到a=>exit 離開,使用while true
 
-print("請使用者輸入a跟b兩個數字 判斷a,b的關係!")
-
-for i in lis:
-    print(f"使用者請輸入{i}:", end="")
-    i = float(input())
-    num.append(i)
-
-if num[0] > num[1]:
-    print(f"a比b大{num[0]-num[1]:.2f}")
-elif num[0] == num[1]:
-    print(f"a跟b一樣大")
-else:
-    print(f"b比a大{num[1]-num[0]:.2f}")
+while True:
+    try:
+        a = eval(input("請輸入a:"))
+        b = eval(input("請輸入b:"))
+        if a == b:
+            print("a跟b一樣大")
+        elif a > b:
+            print(f"a>b,相差:{a-b}")
+        else:
+            print(f"a<b,相差:{b-a}")
+        break
+    except Exception as e:
+        print(f"輸入錯誤!錯誤訊息為:{e}")
