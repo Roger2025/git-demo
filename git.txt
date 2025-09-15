@@ -96,6 +96,12 @@ git reset --hard 40ce06
 26.檢視所有歷程
 git reflog
 
+27.綁定雲端網址
+git remote add origin https://github.com/Roger2025/git-demo.git
+
+28:檢視綁定的雲端網址
+git remote -v
+
 
 
 
