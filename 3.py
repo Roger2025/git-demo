@@ -3,7 +3,11 @@
 
 while True:
     try:
-        a = eval(input("請輸入a:"))
+        a = input("請輸入a:")
+        if a == "exit":
+            print("離開程式")
+            break
+        a = eval(a)
         b = eval(input("請輸入b:"))
         if a == b:
             print("a跟b一樣大")
@@ -11,6 +15,5 @@ while True:
             print(f"a>b,相差:{a-b}")
         else:
             print(f"a<b,相差:{b-a}")
-        break
     except Exception as e:
         print(f"輸入錯誤!錯誤訊息為:{e}")
