@@ -102,6 +102,9 @@ git remote add origin https://github.com/Roger2025/git-demo.git
 28:檢視綁定的雲端網址
 git remote -v
 
+29.推送到雲端
+git push
+
 
 
 
