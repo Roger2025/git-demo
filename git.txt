@@ -105,6 +105,24 @@ git remote -v
 29.推送到雲端
 git push
 
+30.複製專案
+git clone https://github.com/Roger2025/git-demo.git
+
+31.git checkout -b test (新增切換一次完成)
+- git branch test
+- git checkout test
+
+32.雲端同步到本地端
+- git pull
+
+33.刪除雲端分之
+- git push --delete origin dev
+
+34.合併上一次的commit log
+- git commit --amead
+
+35.強制推送
+- git push -f
 
 
 
